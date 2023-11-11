@@ -1,5 +1,5 @@
 USE sql_store; 
 
 SELECT * 
-FROM orders
-WHERE order_date >= "2019-01-01"; 
+FROM order_items
+WHERE order_id = 6 AND quantity * unit_price > 30; 
